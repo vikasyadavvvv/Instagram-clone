@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InstagramClone</title>
+    <link rel="shortcut icon" href="Assets\logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Explore.css">
+</head>
+<body>
+
+    <div class="container">  <!--container-->
+        <div class="left-sidebar">  <!--left-sidebar-->
+        <div class="header"> <!--header-->
+        <div class="side-nav">  <!--side-nav-->
+            <a href="#" class="logo">
+                <img src="Assets/Instagram.png" alt="instagram" class="logo-img">
+                <img src="Assets/insta-logo.png" class="logo-icon" alt="logo">
+            </a>
+            <ul class="nav-links">  <!--nav-links-->
+                <li><a href="Index.html"><img src="Assets/homepage.png" class="nav-img" alt="home">
+                        <p>Home</p>
+                    </a></li>
+                <li onclick="openSearchBox()"><a href="#"><img src="Assets/search.png" class="nav-img"
+                            alt="search">
+                        <p>Search</p>
+                    </a></li>
+                <li><a href="Explore.html"><img src="Assets/explore.png" class="nav-img" alt="explore">
+                        <p>Explore</p>
+                    </a></li>
+                <li><a href="#"><img src="Assets/video.png" class="nav-img" alt="reels">
+                        <p> Reels</p>
+                    </a></li>
+                <li><a href="Inbox.html"> <img src="Assets/messenger.png" class="nav-img" alt="message">
+                        <p>Message</p>
+                    </a></li>
+                <li><a href="#"> <img src="Assets/notification.png" class="nav-img" alt="notification">
+                        <p>Notifications</p>
+                    </a></li>
+                <li><a href="#"><img src="Assets/create.png" class="nav-img" alt="create">
+                        <p>Create</p>
+                    </a></li>
+                <li><a href="Profile.html"><img src="Assets/profile.png" class="nav-img" alt="profile">
+                        <p>Profile</p>
+                    </a></li>
+
+                <li class="more-option" onclick="toggleDropUpOptions()">  <!--more-option-->
+                    <a href="#"><img src="Assets/menu.png" class="nav-img" alt="more">
+                        <p>More</p>
+                    </a>
+                    <ul class="drop-up-options" id="dropUpOptions">  <!--drop-up-options-->
+                        <li><a href="#"><img src="Assets/Setting.png" alt="Setting" class="nav-img">
+                                Settings</a></li>
+                        <li><a href="#"><img src="Assets/activity.png" alt="act" class="nav-img"> Your
+                                Activities</a></li>
+                        <li><a href="#"><img src="Assets/mark.png" alt="mark" class="nav-img"> Saved</a></li>
+                        <li><a href="#"><img src="Assets/night-mode.png" alt="night" class="nav-img"> Switch
+                                Apperacence</a></li>
+                        <li><a href="#"> ,<img src="Assets/warning.png" alt="warning" class="nav-img">Report a
+                                problem</a></li>
+                        <hr>
+                        <li><a href="#">Switch Account</a></li>
+                        <hr>
+                        <li><a href="#">Logout</a></li>
+                    </ul> <!--drop-up-options-->
+                </li>   <!--more-option-->
+                <div class="active"></div>
+            </ul>  <!--nav-links-->
+        </div> <!--side-nav-->
+        </div> <!--header-->
+
+        <div class="search" id="find">  <!--search-->
+            <h1>Search</h1>
+            <div class="box">
+                <input type="text" placeholder="search" class="search-input">
+            </div>  <!--search-->
+            <p>Recent</p>
+            <div class="output">  <!--output-->
+                <p>No Recent</p>
+            </div>  <!--output-->
+        </div>  <!--search-->
+        </div><!--left-sidebar-->
+
+        <div class="right-sidebar">  <!--right-sidebar-->
+            <div class="main">  <!--main-->
+                <div class="item">  <!--item-->
+                    <div class="img_container">  <!--img_container-->
+                        <img src="Assets/ex3.jpeg" alt="post1" class="imgs">
+                        <div class="after">   <!--after-->
+                            <div class="likes">  <!--likes-->
+                                <p> <img src="Assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                                    <p> <img src="Assets/heart1.png" class="like-img" alt="like"> <span
+                                        class="liketext"><b>10</b></span></p>
+
+                            </div>  <!--likes-->
+                        </div>   <!--after-->
+                    </div>  <!--img_container-->
+                </div> <!--item-->
+
+
+            <div class="item">  <!--item-->
+                <div class="img_container">  <!--img_container-->
+                    <img src="assets/padosi.jfif" alt="post2" class="imgs">
+                    <div class="after">  <!--after-->
+                        <div class="likes">   <!--likes-->
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                    class="liketext"><b>10</b></span></p>
+                        </div>   <!--likes-->
+                    </div>   <!--after-->
+                </div>   <!--img_container-->
+            </div>  <!--item-->
+
+            <div class="item">   <!--item-->
+                <div class="vid_container">
+                    <video class="vida" autoplay muted>
+                        <source src="assets/video1.mp4" type="video/mp4">
+                    </video>
+                    <div class="after">
+                        <div class="vid_likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                    class="liketext"><b>10</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--item-->
+
+            <div class="item">   <!--item-->
+                <div class="img_container">
+                    <img src="assets/meet.jpg" alt="post3" class="imgs">
+                    <div class="after">
+                        <div class="likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                    class="liketext"><b>10</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--item-->
+
+            <div class="item">  <!--item-->
+                <div class="vid_container">
+                    <video class="vida" autoplay muted>
+                        <source src="assets/vido.mp4" type="video/mp4">
+                    </video>
+                    <div class="after">
+                        <div class="vid_likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                    class="liketext"><b>10</b></span></p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--item-->
+
+
+            <div class="item">  <!--item-->
+                <div class="img_container">
+                    <img src="assets/minato.jfif" alt="post4" class="imgs">
+                    <div class="after">
+                        <div class="likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                    class="liketext"><b>10</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--item-->
+
+            <div class="item">  <!--item-->
+                <div class="img_container">
+                    <img src="assets/sims.png" alt="post5" class="imgs">
+                    <div class="after">
+                        <div class="likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                  class="liketext"><b>10</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--item-->
+
+            <div class="item">  <!--item-->
+                <div class="img_container">
+                    <img src="assets/unf.jfif" alt="post6" class="imgs">
+                    <div class="after">
+                        <div class="likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                    class="liketext"><b>10</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>   <!--item-->
+ 
+            <div class="item">  <!--item-->
+                <div class="img_container">
+                    <img src="assets/ex6.jpg" alt="post2" class="imgs">
+                    <div class="after">
+                        <div class="likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                    class="liketext"><b>10</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--item-->
+          
+            <div class="item">  <!--item-->
+                <div class="img_container">
+                    <img src="assets/chill.jfif" alt="post2" class="imgs">
+                    <div class="after">
+                        <div class="likes">
+                            <p> <img src="assets/chat1.png" class="like-img" alt="chat"> <span
+                                    class="liketext"><b>3</b></span></p>
+                            <p> <img src="assets/heart1.png" class="like-img" alt="like"> <span
+                                   class="liketext"><b>10</b></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>  <!--item-->
+
+
+        </div>  <!--main-->
+        </div>  <!--right-sidebar-->
+
+    </div>  <!--container-->
+
+    <script>  //script
+        var dropUpVisible = false;
+
+        function toggleDropUpOptions() {
+            var dropUpOptions = document.getElementById("dropUpOptions");
+            dropUpVisible = !dropUpVisible; // Toggle the drop-up visibility state
+            if (dropUpVisible) {
+                dropUpOptions.classList.add("show-drop-up");
+            } else {
+                dropUpOptions.classList.remove("show-drop-up");
+            }
+        }
+        var Searchbox = false;
+        function openSearchBox() {
+            var upsearchbox = document.getElementById("find");
+            Searchbox = !Searchbox;
+            if (Searchbox) {
+                upsearchbox.classList.add("show-search");
+
+            }
+            else {
+                upsearchbox.classList.remove("show-search");
+
+            }
+        }
+    </script>  
+
+    
+</body>
+</html>
